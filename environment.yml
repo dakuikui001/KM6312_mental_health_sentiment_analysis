@@ -1,0 +1,19 @@
+name: mental_health_analysis_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - xgboost
+  - imbalanced-learn
+  - nltk
+  - vaderSentiment
+  - matplotlib
+  - seaborn
+  - wordcloud
+  - jupyter
+  - ipykernel

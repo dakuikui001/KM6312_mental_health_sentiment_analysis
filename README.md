@@ -35,19 +35,18 @@ The project uses a mental health dataset containing statements labeled with vari
 
 ## Installation
 
-### Prerequisites
+### Prerequisite
 
-- Python 3.8 or higher
-- pip package manager
+1. Conda environment manager
 
 ### Setup
 
 1. Clone or download this repository
 2. Navigate to the project directory
-3. Install required dependencies:
+3. Create virtual environment ('mental_health_analysis_env') for this project and install required dependencies:
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
 
 ## Usage
@@ -56,21 +55,18 @@ pip install -r requirements.txt
 
 1. Ensure your data file is placed in the `data/` directory as `Combined Data.csv`
 2. Open the Jupyter notebook:
-
-```bash
-jupyter notebook mental_health_sentiment_analysis.ipynb
-```
-
-3. Run all cells to execute the complete analysis pipeline
+3. Select the following Kernel:
+   'mental_health_analysis_env'
+4. Run all cells to execute the complete analysis pipeline
 
 ### Project Structure
 
 ```
 ├── data/
-│   ├── Combined Data.csv          # Main dataset
+│   ├── Combined Data.csv                   # Main dataset
 ├── mental_health_sentiment_analysis.ipynb  # Main analysis notebook
-├── requirements.txt               # Python dependencies
-└── README.md                      # This file
+├── environment.yml                         # Python dependencies
+└── README.md                               # This file
 ```
 
 ## Methodology
@@ -109,13 +105,6 @@ The project achieves the following performance metrics:
 - **Logistic Regression**: 73.35% accuracy
 - **Random Forest**: 75.32% accuracy  
 - **XGBoost**: Best overall performance with balanced precision and recall
-
-## Key Findings
-
-1. **Sentiment Patterns**: Different mental health conditions show distinct sentiment score distributions
-2. **Feature Importance**: Text length and sentiment scores are crucial predictors
-3. **Class Imbalance**: SMOTE effectively addresses imbalanced dataset issues
-4. **Clustering Insights**: K-Means reveals natural groupings in the data
 
 ## Dependencies
 
