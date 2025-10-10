@@ -8,7 +8,7 @@ This project focuses on sentiment classification of mental health statements usi
 
 ## Features
 
-- **Data Preprocessing**: Text cleaning, tokenization, stemming, and lemmatization
+- **Data Preprocessing**: Text cleaning, tokenization and lemmatization
 - **Sentiment Analysis**: VADER sentiment scoring for emotional analysis
 - **Feature Engineering**: TF-IDF vectorization, word length, and sentiment features
 - **Machine Learning Models**: 
@@ -79,7 +79,7 @@ conda env create -f environment.yml
 - Remove URLs, handles, and special characters
 - Convert to lowercase and tokenize
 - Remove stop words
-- Apply stemming and lemmatization
+- Apply lemmatization
 
 ### 3. Feature Engineering
 - **TF-IDF Vectorization**: Convert text to numerical features
